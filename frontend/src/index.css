@@ -1,0 +1,23 @@
+
+.bottom-cards {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid;
+    border-radius: 5px;
+    
+}
+
+.bottom-card-header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.income-card {
+    flex-grow: .5;
+    padding-right: 5px;
+}
+
+.expense-card {
+    flex-grow: .5;
+    padding-left: 5px;
+}
