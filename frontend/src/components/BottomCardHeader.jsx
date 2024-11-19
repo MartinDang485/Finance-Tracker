@@ -3,7 +3,7 @@ import {Card, CardContent, Typography, IconButton} from '@mui/material'
 import AddCircleIcon from '@mui/icons-material/AddCircle'
 
 //context hooks
-import { useIncomeContext } from '../hooks/useIncomeContext'
+import { UseIncomeContext } from '../hooks/useIncomeContext'
 
 
 const BottomCardHeader = () => {

@@ -1,7 +1,7 @@
 import { IncomeContext } from '../context/IncomeContext'
 import { useContext } from 'react'
 
-export const useIncomeContext = () => {
+export const UseIncomeContext = () => {
     const context = useContext(IncomeContext)
     if(!context) {
         throw Error('UseIncomeContext must be inside useIncomeContextProvider')

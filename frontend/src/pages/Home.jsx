@@ -11,6 +11,7 @@ import {Card, CardContent, Typography, IconButton} from '@mui/material'
 
 
 const Home = () => {
+    //Replace with useContext hook imports
     const [incomes, setIncomes] = useState([])
     const [expenses, setExpenses] = useState([])
     

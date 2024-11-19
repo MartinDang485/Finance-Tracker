@@ -5,11 +5,11 @@ export const IncomeContext = createContext()
 export const incomeReducer = (state, action) => {
     switch (action.type) {
         case 'SET_INCOME':
-            return { income: action.payload }
+            return { incomes: action.payload }
         case 'ADD_INCOME':
-            return { income: action.payload, ...state.income}
+            return { incomes: [action.payload, ...state.incomes]}
         case 'DELETE_INCOME':
-            return { income: state.income.filter((w) => w._id !== action.payload._id)}
+            return { incomes: state.incomes.filter((w) => w._id !== action.payload._id)}
         default: 
             return state
     }
@@ -18,7 +18,7 @@ export const incomeReducer = (state, action) => {
 
 export const IncomeContextProvider = ({children}) => {
     const [state, dispatch] = useReducer(incomeReducer, {
-        income: null
+        incomes: null
     })
     return (
         <IncomeContext.Provider value={{...state, dispatch}}>
